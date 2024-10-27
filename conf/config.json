@@ -1,0 +1,16 @@
+{
+    "WORKER-HOSTNAME": {
+        "ip": "WORKER-IP",
+        "username": "WORKER-HOSTNAME",
+        "path": "WORKER-PATH",
+        "worker_name": "1",
+        "password": "WORKER-PWD"
+    },
+    "WORKER-HOSTNAME-2": {
+        "ip": "WORKER-IP-2",
+        "username": "WORKER-HOSTNAME-2",
+        "path": "WORKER-PATH-2",
+        "worker_name": "2",
+        "password": "WORKER-PWD-2"
+    }
+}

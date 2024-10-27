@@ -1,0 +1,8 @@
+{
+    "master": {
+        "ip": "PS-IP",
+        "username": "PS-HOSTNAME",
+        "password": "PS-PASSWORD",
+        "path": "PS-PATH"
+    }
+}

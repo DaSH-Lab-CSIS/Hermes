@@ -1,0 +1,9 @@
+{
+    "batch_size": "api",
+    "protocol": "Kafka",
+    "experiment": "final [do not change the above two]",
+    "alpha": "SET-ALPHA (-1.3)",
+    "beta": "SET-BETA (0.1)",
+    "lambda": "SET-LAMBDA (5)",
+    "window_size": "SET-WINDOW-SIZE (10)"
+}
