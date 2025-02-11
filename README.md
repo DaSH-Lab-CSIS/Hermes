@@ -5,7 +5,7 @@
 [![HitCount](https://hits.dwyl.com/DaSH-Lab-CSIS/Hermes.svg?style=flat-square)](http://hits.dwyl.com/DaSH-Lab-CSIS/Hermes)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-This repo is an official implementation of **Hermes** for the paper *When Less is More: Achieving Faster Convergence in Distributed Edge Machine Learning* (accepted at 31st IEEE HiPC).
+This repo is an official implementation of **Hermes** for the paper *When Less is More: Achieving Faster Convergence in Distributed Edge Machine Learning* (accepted at 31st IEEE HiPC. best paper nominee ✨).
 
 Distributed Machine Learning (DML) on resource-constrained edge devices holds immense potential for real-world applications. However, achieving fast convergence in DML in these heterogeneous environments remains a significant challenge. Traditional frameworks like Bulk Synchronous Parallel (BSP) and Asynchronous Stochastic Parallel (ASP) rely on frequent, small updates that incur substantial communication overhead and hinder convergence speed. Furthermore, these frameworks often employ static dataset sizes, neglecting the heterogeneity of edge devices and potentially leading to straggler nodes that slow down the entire training process. The straggler nodes, i.e., edge devices that take significantly longer to process their assigned data chunk – hinder the overall training speed. To address these limitations, this paper proposes Hermes, a novel probabilistic framework for efficient DML on edge devices. This framework leverages a dynamic threshold based on recent test loss behavior to identify statistically significant improvements in the model's generalization capability, hence transmitting updates only when major improvements are detected, thereby significantly reducing communication overhead. Additionally, Hermes employs dynamic dataset allocation to optimize resource utilization and prevents performance degradation caused by straggler nodes. Our evaluations on a real-world heterogeneous resource-constrained environment demonstrate that Hermes achieves faster convergence compared to state-of-the-art methods, resulting in a remarkable 13.22x reduction in training time and a 62.1% decrease in communication overhead.
 
@@ -71,7 +71,18 @@ Other contributors: [Palash Gupta](https://github.com/palash-gupta), [Imaad Momi
 The authors are thankful to all contributors for their work to this framework.
 
 ## 4. Citation
-<TODO>
+If you use Hermes in your research, please cite our paper:
+```
+@misc{basani2024moreachievingfasterconvergence,
+      title={When Less is More: Achieving Faster Convergence in Distributed Edge Machine Learning}, 
+      author={Advik Raj Basani and Siddharth Chaitra Vivek and Advaith Krishna and Arnab K. Paul},
+      year={2024},
+      eprint={2410.20495},
+      archivePrefix={arXiv},
+      primaryClass={cs.DC},
+      url={https://arxiv.org/abs/2410.20495}, 
+}
+```
 
 ## 5. Future Work
 - Extend this framework to Pytorch.
